@@ -22,4 +22,22 @@ function colorDia() {
     let elementos = document.getElementById('td');
     //Declarar e inicializa contadores
     let contadorAzul = 0, contadorVerde = 0, contadorRosa = 0, contadorRoxo = 0;
+
+    //Loop para verificar o estilo de cada celula e cotar quantas tem cor e qual cor
+    for(let i = 0; i < elementos.length; i++) {
+        //Obtem o estilo computado do elemento atual
+        var estilo = window.getComputedStyle(elementos[i]);
+        //Obtem a cor de fundo atual da celula
+        var corEstilo = estilo.backgroundColor;
+        //Verifica a cor e incrementar contador correspondente
+        if(corEstilo == "rgb(173, 216, 230)" || corEstilo == "LightBlue") {
+            contadorAzul++;
+        } else if(corEstilo == "rgb(152, 251, 152)" || corEstilo == "PaleGreen") {
+            contadorVerde++;
+        } else if(corEstilo == "rgb(255, 192, 203)" || corEstilo == "LightPink") {
+            contadorRosa++;
+        } else if(corEstilo == "rgb(106, 90, 205)" || corEstilo == "SlateBlue") {
+            contadorRoxo++;
+        }
+    }
 }
