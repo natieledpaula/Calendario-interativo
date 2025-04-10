@@ -16,4 +16,10 @@ function colorDia() {
     } else {
         alert("Por favor informar um dia do calendário");
     }
+
+    //Guardar a celula da tabela
+    //Preste atenção essa parte vai ser importante para prova
+    let elementos = document.getElementById('td');
+    //Declarar e inicializa contadores
+    let contadorAzul = 0, contadorVerde = 0, contadorRosa = 0, contadorRoxo = 0;
 }
