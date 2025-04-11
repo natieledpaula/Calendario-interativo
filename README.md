@@ -28,3 +28,6 @@ Durante esse projeto, foi possível praticar:
 - Organização do código em arquivos separados
 - Criação de botões de navegação entre meses
 - Marcação automática do dia atual
+
+## 📸 Prévia do Projeto
+(https://natieledpaula.github.io/Calendario-interativo/)
